@@ -57,4 +57,10 @@ open `harbor-values.yaml` in a editor and set admin password `harborAdminPasswor
 Installing the chart using the new yaml we have created in the repository by `helm install harbor bitnami/harbor --values harbor-values.yaml -n harbor --create-namespace`
 ![image](https://user-images.githubusercontent.com/67012359/146412850-6e5afc44-71d9-4897-92b0-0241f2e667d4.png)
 
+Make Sure Pods are running using the command `kubectl get all -nharbor`
+
+
+### Visit the Portal to get the Load Balancer IP
+![image](https://user-images.githubusercontent.com/67012359/146413691-f031fc10-c828-4ff7-ac1a-e58d6dbe292b.png)
+
 
