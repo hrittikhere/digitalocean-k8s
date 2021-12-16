@@ -40,3 +40,21 @@ curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bas
 ```bash
 helm repo add bitnami https://charts.bitnami.com/bitnami
 ```
+![image](https://user-images.githubusercontent.com/67012359/146411694-4d26645e-bf92-4b40-8533-3a111a56bd21.png)
+
+### Helm Edit Values
+
+Before installing helm chart we need to edit the yaml file, so create a yaml file 
+```
+helm show values bitnami/harbor > harbor-values.yaml
+```
+![image](https://user-images.githubusercontent.com/67012359/146412067-567f57f9-a59b-41da-9d49-608fe5e3c26d.png)
+
+
+open `harbor-values.yaml` in a editor and set admin password `harborAdminPassword: "<YOUR PASSWORD>"`
+
+### Helm Install Chart
+Installing the chart using the new yaml we have created in the repository by `helm install harbor bitnami/harbor --values harbor-values.yaml -n harbor --create-namespace`
+![image](https://user-images.githubusercontent.com/67012359/146412850-6e5afc44-71d9-4897-92b0-0241f2e667d4.png)
+
+
