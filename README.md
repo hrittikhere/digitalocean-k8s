@@ -16,6 +16,15 @@ Kubernetes does not provide an internal container registry but it is often usefu
 4. Install doctl from the following [link](https://docs.digitalocean.com/reference/doctl/how-to/install/)
 5. Use Certificates from the Authentication for connection to the cluster. 
   ![image](https://user-images.githubusercontent.com/67012359/146408986-c8c71c0d-624c-4034-aeff-d45ddda4e51b.png)
-6. Make sure you have kubectl installed.
+6. Make sure you have kubectl installed. If not, try running these commands on a linux VM:
+```bash
+curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+rm kubectl
+```
 7. Try running `kubectl get nodes` to see the number of nodes. Eg: 
   ![image](https://user-images.githubusercontent.com/67012359/146409442-af33e8dd-b828-4ce4-93ca-2edd1ed5a1a0.png)
+
+## Challenge 
+
+### Helm Installation 
