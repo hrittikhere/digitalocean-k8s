@@ -63,4 +63,6 @@ Make Sure Pods are running using the command `kubectl get all -nharbor`
 ### Visit the Portal to get the Load Balancer IP
 ![image](https://user-images.githubusercontent.com/67012359/146413691-f031fc10-c828-4ff7-ac1a-e58d6dbe292b.png)
 
+### Visit Harbor and use password from your `harbor-values.yml` and user as `admin`.
+![image](https://user-images.githubusercontent.com/67012359/146414136-d61b423c-58da-4afd-9bf5-0d31a1cbd3c8.png)
 
