@@ -28,3 +28,15 @@ rm kubectl
 ## Challenge 
 
 ### Helm Installation 
+
+Helm helps you manage Kubernetes applications — Helm Charts help you define, install, and upgrade even the most complex Kubernetes application. We would install harbor using helm but first let's install Helm.
+
+```bash
+curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash
+```
+
+### Helm Repository (Bitnami)
+ A chart repository is an HTTP server that houses an index.yaml file and optionally some packaged charts. We would use Bitnami for the following.
+```bash
+helm repo add bitnami https://charts.bitnami.com/bitnami
+```
